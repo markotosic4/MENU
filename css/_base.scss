@@ -1,0 +1,55 @@
+$color-grey-light: #F9F9F9;
+$color-grey-light-2: #f9f7f6;
+$color-black: #000000;
+$color-orange: #FFA101;
+$color-gray-dark: #444444;
+
+//FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+
+
+//RESPONSIVE BREAKPOINTS
+$bp-largest: 106em;  // 1700px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 85%;
+    }
+}
+
+
+
+
+
+body {
+    font-family: $font-primary;
+    //color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
