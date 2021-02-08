@@ -1,10 +1,11 @@
 .container {
     margin: 0;
     padding: 0;
+    //height: auto;
 }
 
 .hero {
-    height: 98vh;
+    height: 100vh;
     max-width: 100%;
     background-image: url(../img/1-4.jpg);
       
@@ -84,10 +85,10 @@
 
 
 .offers {
-    
+    height: 100%;
     display: grid;
     grid-template-rows: 15vw;
-    grid-template-columns: 24.5vw 24.5vw 24.5vw 24.5vw;
+    grid-template-columns: 25vw 25vw 25vw 1fr;
     
     &__img {
         width: 100%;
@@ -97,7 +98,13 @@
         
     }
 
+   
  }
+
+ 
+ 
+
+ 
 
 
 .about__section-1 {

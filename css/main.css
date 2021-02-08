@@ -31,7 +31,7 @@ body {
 }
 
 .hero {
-  height: 98vh;
+  height: 100vh;
   max-width: 100%;
   background-image: url(../img/1-4.jpg);
   background-size: cover;
@@ -107,12 +107,13 @@ body {
 }
 
 .offers {
+  height: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 15vw;
       grid-template-rows: 15vw;
-  -ms-grid-columns: 24.5vw 24.5vw 24.5vw 24.5vw;
-      grid-template-columns: 24.5vw 24.5vw 24.5vw 24.5vw;
+  -ms-grid-columns: 25vw 25vw 25vw 1fr;
+      grid-template-columns: 25vw 25vw 25vw 1fr;
 }
 
 .offers__img {
