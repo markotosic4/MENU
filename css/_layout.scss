@@ -285,17 +285,19 @@
 .contact-form {
     display: grid;
     justify-content: center;
+    align-items: center;
     align-content: center;
-    padding: 100px;
+    //padding: 100px;
 
     
     
 }
 
 input{
+    //display: grid;
     padding: 10px;
-    margin: 10px;
-    width: 90%;
+    margin-bottom: 10px;
+    width: 100%;
     background-color: rgba(255, 249, 249, 0.76);
     color:rgba(14, 14, 14, 0.986);
     border: none;
@@ -309,8 +311,8 @@ input::placeholder{
 
 textarea{
     padding: 10px;
-    margin: 10px;
-    width: 90%;
+    //margin: 10px;
+    width: 100%;
     background-color: rgba(255, 249, 249, 0.76);
     color: rgba(14, 14, 14, 0.986);
     border: none;
@@ -321,7 +323,11 @@ textarea::placeholder{
     color: rgb(114, 111, 111);
 }
 
-.submit{
+/*.submit{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
     width: 20%;
     background: none;
     padding: 8px;
@@ -341,6 +347,13 @@ textarea::placeholder{
 .submit:hover{
     
     cursor: pointer;
+} */
+
+.btn-contact {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
 }
 
 

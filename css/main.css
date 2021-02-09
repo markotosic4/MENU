@@ -312,15 +312,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 100px;
 }
 
 input {
   padding: 10px;
-  margin: 10px;
-  width: 90%;
+  margin-bottom: 10px;
+  width: 100%;
   background-color: rgba(255, 249, 249, 0.76);
   color: rgba(14, 14, 14, 0.986);
   border: none;
@@ -349,8 +351,7 @@ input::placeholder {
 
 textarea {
   padding: 10px;
-  margin: 10px;
-  width: 90%;
+  width: 100%;
   background-color: rgba(255, 249, 249, 0.76);
   color: rgba(14, 14, 14, 0.986);
   border: none;
@@ -373,25 +374,41 @@ textarea::placeholder {
   color: #726f6f;
 }
 
-.submit {
-  width: 20%;
-  background: none;
-  padding: 8px;
-  outline: none;
-  font-size: 13px;
-  font-weight: bold;
-  height: 33px;
-  text-align: center;
-  cursor: pointer;
-  letter-spacing: 2px;
-  margin-left: 35%;
-  margin-top: 35px;
-  border: 2px solid black;
-  color: black;
+/*.submit{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    width: 20%;
+    background: none;
+    padding: 8px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-left: 35%;
+    margin-top: 35px;
+    border: 2px solid black;
+    color: black
 }
 
-.submit:hover {
-  cursor: pointer;
+.submit:hover{
+    
+    cursor: pointer;
+} */
+.btn-contact {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20%;
 }
 
 .footer {
