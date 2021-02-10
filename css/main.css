@@ -304,6 +304,7 @@ body {
   text-decoration: none;
   color: white;
   font-family: "Nunito", sans-serif;
+  margin-bottom: 50px;
 }
 
 .contact-form {
@@ -418,6 +419,9 @@ textarea::placeholder {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: #343532;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -428,10 +432,17 @@ textarea::placeholder {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 10rem;
   list-style: none;
   text-transform: uppercase;
-  margin: 60px;
+  margin-top: 60px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer__nav__link:link, .footer__nav__link:visited {

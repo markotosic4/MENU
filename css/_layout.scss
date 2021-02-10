@@ -279,6 +279,7 @@
     text-decoration: none;
     color: white;
     font-family: $font-primary;
+    margin-bottom: 50px;
     
 }
 
@@ -365,16 +366,19 @@ textarea::placeholder{
     align-content: center;
     //grid-template-columns: 1fr 1fr 1fr;
     background-color: #343532;
-    
+    justify-content: center;
     align-items: center;
 
     &__nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-column-gap: 10rem;
+        //grid-column-gap: 10rem;
         list-style: none;
         text-transform: uppercase;
-        margin: 60px;
+        margin-top: 60px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
         
         &__link:link,
         &__link:visited {
