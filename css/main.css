@@ -38,6 +38,10 @@ body {
   background-size: cover;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
 }
 
 .hero__text-box {
@@ -46,6 +50,12 @@ body {
   -ms-flex-line-pack: center;
       align-content: center;
   justify-items: start;
+  -ms-grid-row: 8;
+  -ms-grid-row-span: 3;
+  grid-row: 8 / 11;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
 }
 
 @media (max-width: 1600px) {
@@ -94,6 +104,11 @@ body {
   grid-row-gap: 0px;
   list-style: none;
   text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .nav__link:link, .nav__link:visited {
@@ -117,11 +132,11 @@ body {
     //margin-right: 28rem;
     margin-left: 50px;
 }*/
-.hero__text-box {
-  margin-left: 82px;
-  margin-top: 300px;
-}
-
+/*.hero__text-box {
+    //margin-left: 82px;
+    //margin-top: 300px;
+    
+}*/
 .offers {
   height: 100%;
   display: -ms-grid;
@@ -287,17 +302,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  grid-column-gap: 2.5rem;
+  grid-column-gap: 2.5vw;
 }
 
 .testimonials .testimonial__img {
-  width: 12rem;
+  width: 12vw;
   border-radius: 50%;
   display: block;
 }
 
 .testimonials .testimonial__text {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 
 @media (max-width: 1200px) {
@@ -310,6 +325,13 @@ body {
         grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 50px;
+  }
+}
+
+@media (max-width: 760px) {
+  .testimonial {
+    display: -ms-grid;
+    display: grid;
   }
 }
 
@@ -511,7 +533,7 @@ textarea::placeholder {
 }
 
 .heading-1 {
-  font-size: 6rem;
+  font-size: 6vw;
   color: #000000;
 }
 
@@ -535,7 +557,7 @@ textarea::placeholder {
 }
 
 .heading-3 {
-  font-size: 3rem;
+  font-size: 3vw;
   color: #000000;
 }
 
@@ -544,7 +566,7 @@ textarea::placeholder {
 }
 
 .heading-4 {
-  font-size: 1.7rem;
+  font-size: 1.7vw;
 }
 
 .btn {
@@ -555,7 +577,7 @@ textarea::placeholder {
   font-family: "Nunito", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.2rem 2rem;
+  padding: 1.2vw 2vw;
   cursor: pointer;
   -webkit-transition: all .2s;
   transition: all .2s;

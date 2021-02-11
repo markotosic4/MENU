@@ -18,12 +18,19 @@
     display: grid;
     //grid-template-rows: 6fr min-content minmax(3rem, min-content);
     //grid-row-gap: 3rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     
     
     &__text-box {
         display: grid;
         align-content: center;
         justify-items: start;
+        grid-row: 8 / 11;
+        grid-column: 2 / 3;
+        //grid-template-columns: 1fr 1fr 1fr;
+        //grid-template-columns: repeat(4, 1fr);
+        //grid-template-rows: 1fr;
         
         
     }
@@ -47,7 +54,7 @@
     max-height: 4rem;
     //margin-top: 10px;
     align-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     background-color: #343532;
     opacity: 95%;
     max-width: 100%;
@@ -73,6 +80,8 @@
     grid-row-gap: 0px; 
     list-style: none;
     text-transform: uppercase;
+    align-items: center;
+    align-content: center;
     
     
     //background-color: white;
@@ -103,11 +112,11 @@
     margin-left: 50px;
 }*/
 
-.hero__text-box {
-    margin-left: 82px;
-    margin-top: 300px;
+/*.hero__text-box {
+    //margin-left: 82px;
+    //margin-top: 300px;
     
-}
+}*/
 
 
 
@@ -281,16 +290,16 @@
         
         grid-template-columns: min-content 1fr;
         align-items: center;
-        grid-column-gap: 2.5rem;
+        grid-column-gap: 2.5vw;
         
         &__img {
-            width: 12rem;
+            width: 12vw;
             border-radius: 50%;
             display: block;
         }
 
         &__text {
-            font-size: 1.5rem;
+            font-size: 1.5vw;
         }
 
        
@@ -306,11 +315,20 @@
         grid-column-gap: 0px;
         grid-row-gap: 50px;
         //padding: 100px;
+    } 
     }
 
-    
+    @media (max-width: 760px) {
+        .testimonial {
+            display: grid;
+            
+            
 
-    }
+
+}
+        } 
+        
+
 
 .contact {
     //width: 90%;
@@ -427,6 +445,10 @@ textarea::placeholder{
 
     &__nav {
         display: grid;
+
+        //grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+        //grid-gap: 7rem;
+
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         //grid-column-gap: 10rem;
         list-style: none;
@@ -447,6 +469,8 @@ textarea::placeholder{
         transition: all .2s;
     }
 
+   
+
     &__link:hover,
     &__link:active {
     transform: translateY(-3px);
@@ -455,6 +479,7 @@ textarea::placeholder{
         
     }
 }
+
 
 .copyright {
     font-size: 1rem;
