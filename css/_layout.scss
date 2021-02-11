@@ -310,12 +310,32 @@
 @media (max-width: 1200px) {
     .testimonials {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        //padding: 100px;
+    } 
+
+    .testimonial {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
-        grid-row-gap: 50px;
-        //padding: 100px;
-    } 
+        grid-row-gap: 0px; 
+
+        &__img {
+            //width: 12vw;
+            //border-radius: 50%;
+            display: grid;
+            grid-row: 1 / 2;
+        }
+
+        &__text {
+            //font-size: 1.5vw;
+            grid-row: 2 /3;
+        }
+    }
     }
 
     @media (max-width: 760px) {
