@@ -146,16 +146,22 @@
    //max-width: 100%;
    background-size: cover;
    display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-template-rows: 1fr 1fr 1fr;
   
 }
 
 .about__text-1 {
     display: grid;
+    grid-column: 9 / 13;
+    grid-row: 2 / 3;
     align-content: center;
     justify-content: center;
     justify-items: start;
-    margin-top: 5rem;
-    margin-left: 55rem;
+    //margin-top: 5rem;
+    //margin-left: 55rem;
+    //margin-right: -75vw;
+    
 
 }
 
