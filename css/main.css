@@ -685,9 +685,10 @@ textarea::placeholder {
 
 @media (max-width: 414px) {
   .btn {
-    padding: 14px 15px;
+    padding: 1px 13px;
     color: #000000;
     margin-top: 27px;
+    font-size: 15px;
   }
 }
 
