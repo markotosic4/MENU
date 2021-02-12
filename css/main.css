@@ -81,6 +81,9 @@ body {
     -ms-grid-column-span: 8;
     grid-column: 2 / 10;
     font-size: 17px;
+    -webkit-font-kerning: auto;
+            font-kerning: auto;
+    line-height: 58px;
     padding-top: 110px;
   }
 }
@@ -678,6 +681,7 @@ textarea::placeholder {
   .btn {
     padding: 14px 15px;
     color: #000000;
+    margin-top: 27px;
   }
 }
 
