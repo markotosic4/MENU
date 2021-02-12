@@ -202,7 +202,7 @@ body {
   display: block;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   .offers__img {
     display: none;
   }
