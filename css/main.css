@@ -128,7 +128,6 @@ body {
     padding: 32px;
   }
   .header__hamburger {
-    margin-right: 13px;
     height: 18px;
   }
 }
@@ -201,6 +200,19 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+}
+
+@media (max-width: 414px) {
+  .offers__img {
+    display: none;
+  }
+  .offers {
+    background-size: cover;
+    width: 100%;
+    background-image: url(../img/image_1.png);
+    background-repeat: no-repeat;
+    height: 169px;
+  }
 }
 
 .about__section-1 {

@@ -115,7 +115,7 @@
     }
     
     .header__hamburger {
-        margin-right: 13px;
+        //margin-right: 10px;
         height: 18px;
         
     }
@@ -200,6 +200,33 @@
    
  }
 
+@media (max-width: 414px) {
+    .offers__img {
+        display: none;
+        
+    }
+    .offers {
+        
+        //  
+        background-size: cover;
+        
+         //grid-template-rows: 169vh;
+         //grid-template-columns: 300px;
+         //
+        width: 100%;
+        background-image: url(../img/image_1.png);
+        background-repeat: no-repeat;
+        height: 169px;
+        
+        //margin: 10px;
+        
+
+
+    }
+
+    
+    
+}
  
  
 
