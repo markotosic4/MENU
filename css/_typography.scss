@@ -28,6 +28,15 @@
     }
 }
 
+@media (max-width: 414px) {
+    .heading-2-1 {
+        font-size: 13vw;
+        font-weight: bold;
+        
+        
+    }
+}
+
 .heading-3 {
     @extend %heading;
     font-size: 3vw;
@@ -72,6 +81,13 @@
         animation-fill-mode: backwards;
     }
     
+}
+
+@media (max-width: 414px) {
+    .btn {
+        padding: 14px 15px;
+        color: $color-black;
+    }
 }
 
 

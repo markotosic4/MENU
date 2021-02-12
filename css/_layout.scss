@@ -30,17 +30,43 @@
         grid-column: 2 / 3;
         //grid-template-columns: 1fr 1fr 1fr;
         //grid-template-columns: repeat(4, 1fr);
-        //grid-template-rows: 1fr;
-        
-        
-    }
-    
+        //grid-template-rows: 1fr;   
+    }  
 }
+
+
 
 @media (max-width: 1600px) {
     .hero {
         background-image: url(../img/1-4_smaler_size.jpg);
     }
+}
+
+@media (max-width: 414px) {
+    .hero {
+        background-image: url(../img/_hero_image_maska.png);
+        //max-width: 100%;
+        height:100vh;
+        background-size: cover;
+
+        .nav {
+            display: none;
+        }
+        
+        
+        &__text-box {
+                grid-row: 7 / 10;
+                grid-column: 2 / 10;
+                font-size: 17px;
+                //margin-top: 110px;
+                padding-top: 110px;
+                
+        }   
+        
+
+    }
+    
+    
 }
 
 /*@media (max-width: 900px) {
@@ -50,21 +76,40 @@
 }*/
 
 .header {
-    display: grid;
+    display: flex;
     max-height: 4rem;
-    //margin-top: 10px;
+    margin-top: 5px;
     align-content: center;
     grid-template-columns:1fr 1fr 1fr;
-    background-color: #343532;
+    //background-color: #343532;
     opacity: 95%;
     max-width: 100%;
     position: fixed;
+
+    
+    
+    /*&__logo {
+        display: block;
+    }*/
     
     
     
     //justify-items: stretch;
     align-items: center;
 }
+
+@media (max-width: 414px) {
+    .header {
+        display: flex;
+        width: 100vw;
+        //flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    
+    
+}
+
 
 .nav {
     /*display: grid;
@@ -82,6 +127,9 @@
     text-transform: uppercase;
     align-items: center;
     align-content: center;
+    opacity: 1;
+
+
     
     
     //background-color: white;
@@ -499,6 +547,18 @@ textarea::placeholder{
         
     }
 }
+
+@media (max-width: 414px) {
+    .footer__nav {
+       display: grid;
+       grid-template-rows: 1fr 1fr;
+       grid-template-columns: 1fr 1fr 1fr;
+       
+
+   } 
+    } 
+
+
 
 
 .copyright {

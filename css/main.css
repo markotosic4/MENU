@@ -64,26 +64,64 @@ body {
   }
 }
 
+@media (max-width: 414px) {
+  .hero {
+    background-image: url(../img/_hero_image_maska.png);
+    height: 100vh;
+    background-size: cover;
+  }
+  .hero .nav {
+    display: none;
+  }
+  .hero__text-box {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 3;
+    grid-row: 7 / 10;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 8;
+    grid-column: 2 / 10;
+    font-size: 17px;
+    padding-top: 110px;
+  }
+}
+
 /*@media (max-width: 900px) {
     .hero {
         background-image: url(../img/1-4_smaler_size.jpg);
     }
 }*/
 .header {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-height: 4rem;
+  margin-top: 5px;
   -ms-flex-line-pack: center;
       align-content: center;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  background-color: #343532;
   opacity: 95%;
   max-width: 100%;
   position: fixed;
+  /*&__logo {
+        display: block;
+    }*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 414px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
+  }
 }
 
 .nav {
@@ -109,6 +147,7 @@ body {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  opacity: 1;
 }
 
 .nav__link:link, .nav__link:visited {
@@ -539,6 +578,17 @@ textarea::placeholder {
           transform: translateY(-3px);
 }
 
+@media (max-width: 414px) {
+  .footer__nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .copyright {
   font-size: 1rem;
   color: #aaa;
@@ -578,6 +628,13 @@ textarea::placeholder {
           animation: moveInBottom 1.5s ease-in-out;
 }
 
+@media (max-width: 414px) {
+  .heading-2-1 {
+    font-size: 13vw;
+    font-weight: bold;
+  }
+}
+
 .heading-3 {
   font-size: 3vw;
   color: #000000;
@@ -615,6 +672,13 @@ textarea::placeholder {
           animation: moveInBottom 2s ease-in-out;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+}
+
+@media (max-width: 414px) {
+  .btn {
+    padding: 14px 15px;
+    color: #000000;
+  }
 }
 
 .mt {
