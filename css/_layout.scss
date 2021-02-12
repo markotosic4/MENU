@@ -88,6 +88,8 @@
     opacity: 95%;
     max-width: 100%;
     position: fixed;
+    
+    
 
     
     
@@ -108,8 +110,15 @@
         //flex-wrap: wrap;
         justify-content: space-between;
         padding: 10px;
+        height: 30vh;
+        padding: 32px;
     }
     
+    .header__hamburger {
+        margin-right: 13px;
+        height: 18px;
+        
+    }
     
 }
 
