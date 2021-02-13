@@ -28,6 +28,7 @@
         justify-items: start;
         grid-row: 8 / 11;
         grid-column: 2 / 3;
+        line-height: 5vw;
         //grid-template-columns: 1fr 1fr 1fr;
         //grid-template-columns: repeat(4, 1fr);
         //grid-template-rows: 1fr;   
@@ -80,11 +81,18 @@
     max-width: 100%;
     position: fixed;
     align-items: center;
+
+    &__hamburger {
+        display: none;
+    }
+    &__logo {
+        display: none;
+    }
 }
 
 @media (max-width: 414px) {
     .header {
-        display: flex;
+        display: flwx;
         width: 100vw;
         //flex-wrap: wrap;
         justify-content: space-between;
@@ -96,6 +104,7 @@
     
     .header__hamburger {
         //margin-right: 10px;
+        display: flex;
         height: 18px;
         
         
@@ -105,28 +114,24 @@
     
     .header__logo {
         height: 55px;
+        display: flex;
         
     }
 }
 
 
 .nav {
-    /*display: grid;
-    grid-column: 2/ 3;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10rem;*/
-
+      
     display: grid;
     grid-column: 2/ 3;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 0px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10vw;
     list-style: none;
     text-transform: uppercase;
-    align-items: center;
-    align-content: center;
-    opacity: 1;
+
+    
+    
+    
 
     
 
@@ -134,7 +139,7 @@
     &__link:visited {
         
         text-decoration: none;
-        color: white;
+        color: #5a7b08;
         font-family: $font-primary;  
         padding: 1.5rem;
         display: block;
@@ -279,9 +284,12 @@
     display: none;
     @media (max-width: 500px) {
         display: grid;
-        margin: 20px;
+        //margin: 20px;
+        margin-right: 28px;
         justify-content: center;
         line-height: 30px;
+        font-size: 2.6vw;
+
 
     }
 }
@@ -311,7 +319,7 @@
     background-image: url(../img/about__photo-2.jpg);
     background-size: cover;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 
     @media (max-width: 500px) {
         margin: 10px;
@@ -322,8 +330,9 @@
 .about__text-2 {
     display: grid;
     align-content: center;
-    justify-content: center;
-    grid-column: 1 / 2;
+    justify-content: left;
+    grid-column: 1 / 3;
+    margin-left: 100px;
 
     @media (max-width: 500px) {
         display: none;
