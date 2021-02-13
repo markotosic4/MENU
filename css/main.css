@@ -748,6 +748,13 @@ textarea::placeholder {
   width: 20%;
 }
 
+@media (max-width: 500px) {
+  .btn-contact {
+    width: 100%;
+    height: 40px;
+  }
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
