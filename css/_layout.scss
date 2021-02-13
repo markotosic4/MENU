@@ -441,11 +441,16 @@
  
     background-color: $color-grey-light;
     display: grid;
-    grid-template-columns:  1fr 1fr;
-    grid-gap: rem;
+    grid-template-columns:1fr 1fr;
+    grid-gap: 1rem;
     align-items: center;
     justify-items: center;
-    padding: 100px;
+    padding: 70px;
+    
+    
+   
+
+
     
     
     
@@ -457,6 +462,7 @@
         align-items: center;
         grid-column-gap: 2.5vw;
         
+        
         &__img {
             width: 12vw;
             border-radius: 50%;
@@ -467,8 +473,19 @@
             font-size: 1.5vw;
         }
 
+        @media (max-width: 720px) {
+             //display: none;
+             grid-template-columns: 1fr;
+             justify-content: center;
+            } 
        
+            @media (max-width: 500px) {
+                display:none;
+                //grid-template-columns: 1fr;
+                //justify-content: center;
+               } 
     }
+    
     
 }
 
@@ -485,7 +502,7 @@
     .testimonial {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        //grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px; 
 
@@ -507,22 +524,66 @@
         .testimonial {
             display: grid;
             
-            
-
-
-}
+       }
         } 
         
+        @media (max-width: 500px) {
+            .testimonial {
+                display: none;
+                //grid-template-columns:1fr;
+                //grid-template-rows: 1fr;
+                //grid-column-gap: 0px;
+                //grid-row-gap: 0px; 
+                //padding: 100px;
+            } 
+        }
+
+
+        
+        
+        .testimonials__mob {
+            display: none;
+
+            @media (max-width: 500px) {
+                display: grid;
+                grid-template-rows: 30px 1fr 80px;
+                grid-gap: 20px;
+                //justify-content: center;
+                margin-left: 20px;
+                
+                .testimonials__details {
+                    margin-left: 14px;
+                }
+
+                .testimonial__mob {
+                    border-radius: 50%;
+                }
+                .testimonials__text {
+                    margin-left: 10px;
+                }
+
+
+            }
+        }
+
 
 
 .contact {
-    //width: 90%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
     height: 900px;
     display: grid;
     align-content: center;
     justify-content: center;
+    
+    @media (max-width: 500px) {
+        .heading-2 {
+            font-size: 27px;
+        }
+
+    }
+
 }
 
 #contact-section {
