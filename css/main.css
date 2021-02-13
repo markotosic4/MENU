@@ -599,9 +599,6 @@ body {
     grid-gap: 20px;
     margin-left: 20px;
   }
-  .testimonials__mob .testimonials__details {
-    margin-left: 14px;
-  }
   .testimonials__mob .testimonial__mob {
     border-radius: 50%;
   }
