@@ -106,9 +106,6 @@ body {
   opacity: 95%;
   max-width: 100%;
   position: fixed;
-  /*&__logo {
-        display: block;
-    }*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -126,9 +123,13 @@ body {
     padding: 10px;
     height: 30vh;
     padding: 32px;
+    z-index: 100;
   }
   .header__hamburger {
     height: 18px;
+  }
+  .header__logo {
+    height: 55px;
   }
 }
 
@@ -197,6 +198,7 @@ body {
         grid-template-columns: 100% 100% 100% 100% 100%;
     -ms-grid-rows: 169px;
         grid-template-rows: 169px;
+    margin: 10px;
   }
   #slider figure {
     position: relative;
@@ -289,11 +291,8 @@ body {
 }
 
 @media (max-width: 500px) {
-  .offers__img {
-    display: none;
-  }
   .offers {
-    background-size: cover;
+    display: none;
   }
 }
 

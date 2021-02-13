@@ -93,9 +93,7 @@
 
     
     
-    /*&__logo {
-        display: block;
-    }*/
+    
     
     
     
@@ -112,14 +110,22 @@
         padding: 10px;
         height: 30vh;
         padding: 32px;
+        z-index: 100;
     }
     
     .header__hamburger {
         //margin-right: 10px;
         height: 18px;
         
+        
     }
+
+
     
+    .header__logo {
+        height: 55px;
+        
+    }
 }
 
 
@@ -189,6 +195,8 @@
             overflow: hidden;
             grid-template-columns: 100% 100% 100% 100% 100%;
             grid-template-rows: 169px;
+            margin: 10px;
+            
             
         }
         
@@ -257,14 +265,11 @@
  }
 
 @media (max-width: 500px) {
-    .offers__img {
-        display: none;
-        
-    }
+    
     .offers {
-        
+        display: none;
         //  
-        background-size: cover;
+        
         
          //grid-template-rows: 169vh;
          //grid-template-columns: 300px;
