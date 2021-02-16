@@ -301,10 +301,8 @@
     align-content: center;
     justify-content: center;
     justify-items: start;
-    //margin-top: 5rem;
-    //margin-left: 55rem;
-    //margin-right: -75vw;
-     
+    //line-height: 2vw;
+    
     @media (max-width: 500px) {
         display: none;
     }
@@ -588,9 +586,9 @@
     
     @media (max-width: 500px) {
         .heading-2 {
-            font-size: 27px;
+            font-size: 10vw;
         }
-
+       height: 65vh;
     }
 
 }
