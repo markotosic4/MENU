@@ -614,11 +614,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    align-content: center;
-    //padding: 100px;
-
-    
-    
+    align-content: center;   
 }
 
 input{
@@ -639,7 +635,6 @@ input::placeholder{
 
 textarea{
     padding: 10px;
-    //margin: 10px;
     width: 100%;
     background-color: rgba(255, 249, 249, 0.76);
     color: rgba(14, 14, 14, 0.986);
@@ -651,37 +646,13 @@ textarea::placeholder{
     color: rgb(114, 111, 111);
 }
 
-/*.submit{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-
-    width: 20%;
-    background: none;
-    padding: 8px;
-    outline: none;
-    font-size: 13px;
-    font-weight: bold;
-    height: 33px;
-    text-align: center;
-    cursor: pointer;
-    letter-spacing: 2px;
-    margin-left: 35%;
-    margin-top: 35px;
-    border: 2px solid black;
-    color: black
-}
-
-.submit:hover{
-    
-    cursor: pointer;
-} */
 
 .btn-contact {
     display: grid;
     justify-content: center;
     align-items: center;
     width: 20%;
+    margin-top: 5px;
 
     @media (max-width: 500px) {
         width: 100%;
