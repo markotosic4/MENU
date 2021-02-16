@@ -628,7 +628,7 @@ body {
 
 @media (max-width: 500px) {
   .contact {
-    height: 80vh;
+    height: 90vh;
   }
   .contact .heading-2 {
     font-size: 10vw;
