@@ -70,18 +70,24 @@
 }
 
 
+
+
 .header {
     display: flex;
-    max-height: 4rem;
-    margin-top: 5px;
+    height: 50px;
+    padding: 40px;
     align-content: center;
+    
     //background-color: #343532;
     opacity: 95%;
     width: 100vw;
     position: fixed;
     align-items: center;
     justify-content: center;
+    
     //margin-left: 10px;
+
+
 
     &__hamburger {
         display: none;
@@ -89,6 +95,15 @@
     &__logo {
         display: none;
     }
+
+    
+}
+
+.BgColour {
+    //color: white;
+    transition: all 1s;
+    background-color:#343532;
+    
 }
 
 @media (max-width: 500px) {
@@ -96,10 +111,9 @@
         display: flex;
         width: 100vw;
         justify-content: space-between;
-        padding: 10px;
-        height: 30vh;
-        padding: 32px;
+        padding: 40px;
         z-index: 100;
+        margin: 0;
     }
     
     .header__hamburger {
@@ -117,6 +131,8 @@
         display: flex;
         
     }
+
+    
 }
 
 
@@ -144,6 +160,8 @@
         padding: 1.5rem;
         display: block;
         transition: all .2s;
+        font-weight: bold;
+
     }
 
     &__link:hover,
