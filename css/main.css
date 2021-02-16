@@ -122,6 +122,11 @@ body {
   background-color: #343532;
 }
 
+.BgColour .nav__link:link,
+.BgColour .nav__link:visited {
+  color: #BFD690;
+}
+
 @media (max-width: 500px) {
   .header {
     display: -webkit-box;
@@ -164,7 +169,7 @@ body {
 
 .nav__link:link, .nav__link:visited {
   text-decoration: none;
-  color: #5a7b08;
+  color: #4f7209;
   font-family: "Nunito", sans-serif;
   padding: 1.5rem;
   display: block;

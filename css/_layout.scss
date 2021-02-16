@@ -103,6 +103,11 @@
     //color: white;
     transition: all 1s;
     background-color:#343532;
+
+    .nav__link:link,
+    .nav__link:visited {
+        color: #BFD690;
+    }
     
 }
 
@@ -155,7 +160,7 @@
     &__link:visited {
         
         text-decoration: none;
-        color: #5a7b08;
+        color: #4f7209;
         font-family: $font-primary;  
         padding: 1.5rem;
         display: block;
