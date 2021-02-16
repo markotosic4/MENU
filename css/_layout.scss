@@ -75,12 +75,13 @@
     max-height: 4rem;
     margin-top: 5px;
     align-content: center;
-    grid-template-columns:1fr 1fr 1fr;
     //background-color: #343532;
     opacity: 95%;
-    max-width: 100%;
+    width: 100vw;
     position: fixed;
     align-items: center;
+    justify-content: center;
+    margin-left: 10px;
 
     &__hamburger {
         display: none;
@@ -92,9 +93,8 @@
 
 @media (max-width: 414px) {
     .header {
-        display: flwx;
+        display: flex;
         width: 100vw;
-        //flex-wrap: wrap;
         justify-content: space-between;
         padding: 10px;
         height: 30vh;
