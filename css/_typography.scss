@@ -18,7 +18,7 @@
     @extend %heading;
     font-size: 4vw;
     color: $color-black;
-
+    
     &__color {
         color: $color-orange;
     }
@@ -28,7 +28,7 @@
     }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
     .heading-2-1 {
         font-size: 13vw;
         font-weight: bold;
@@ -64,12 +64,29 @@
     border: none;
     border-radius: 0;
     font-family: $font-primary;
-    //font-size: 1.5rem;
+    //font-size: 1.5 vh;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.2vw 2vw;
     cursor: pointer;
     transition: all .2s;
+    
+
+    &__hero {
+        margin-top: 27px;
+        padding: 0.1vw 2vw;
+    }
+
+    @media (max-width: 720px) {
+            //padding: 1px 13px;
+            color: $color-black;
+            //margin-top: 27px;
+            font-size: 1vw;
+
+            &__menu-item {
+                font-size: 2.5vw;
+            }
+    }
 
     &:hover {
         background-color: #92A563;
@@ -83,16 +100,19 @@
     
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
     .btn {
         padding: 1px 13px;
-        
         color: $color-black;
-        margin-top: 27px;
         font-size: 15px;
+
+        &__menu-item {
+            padding: 13px 13px;
+        }
 
     }
 }
+
 
 
 .mt { margin-top: -3rem; }

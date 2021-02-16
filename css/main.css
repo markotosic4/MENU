@@ -65,7 +65,7 @@ body {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   .hero {
     background-image: url(../img/hero_image_maska.jpg);
     height: 100vh;
@@ -106,7 +106,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 10px;
 }
 
 .header__hamburger {
@@ -117,7 +116,7 @@ body {
   display: none;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -391,6 +390,12 @@ body {
   margin-left: 100px;
 }
 
+@media (max-width: 900px) {
+  .about__text-2 {
+    line-height: 58px;
+  }
+}
+
 @media (max-width: 500px) {
   .about__text-2 {
     display: none;
@@ -467,7 +472,6 @@ body {
   display: -ms-grid;
   display: grid;
   justify-items: center;
-  grid-row-gap: .5rem;
 }
 
 .menu__item__name {
@@ -476,15 +480,13 @@ body {
   text-align: center;
 }
 
-.menu__item__description, .menu__item__price {
+.menu__item-name {
+  font-size: 1.6rem;
+  margin-top: .5rem;
+}
+
+.menu__item-description, .menu__item-price {
   font-size: 1.5rem;
-  margin-left: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .menu__img {
@@ -860,7 +862,7 @@ textarea::placeholder {
           animation: moveInBottom 1.5s ease-in-out;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   .heading-2-1 {
     font-size: 13vw;
     font-weight: bold;
@@ -894,6 +896,21 @@ textarea::placeholder {
   transition: all .2s;
 }
 
+.btn__hero {
+  margin-top: 27px;
+  padding: 0.1vw 2vw;
+}
+
+@media (max-width: 720px) {
+  .btn {
+    color: #000000;
+    font-size: 1vw;
+  }
+  .btn__menu-item {
+    font-size: 2.5vw;
+  }
+}
+
 .btn:hover {
   background-color: #92A563;
   color: white;
@@ -906,12 +923,14 @@ textarea::placeholder {
           animation-fill-mode: backwards;
 }
 
-@media (max-width: 414px) {
+@media (max-width: 500px) {
   .btn {
     padding: 1px 13px;
     color: #000000;
-    margin-top: 27px;
     font-size: 15px;
+  }
+  .btn__menu-item {
+    padding: 13px 13px;
   }
 }
 
