@@ -33,6 +33,9 @@
         //grid-template-columns: repeat(4, 1fr);
         //grid-template-rows: 1fr;   
     }  
+    .navbar {
+        display: none;
+    }
 }
 
 
@@ -53,6 +56,19 @@
         .nav {
             display: none;
         }
+
+    
+        .nav__link:link,
+        .nav__link:visited {
+            font-size: 22px;
+            line-height: 40px;
+            color: white; 
+            padding: 0;
+        
+            transition: all .2s;
+            font-weight: normal;
+            
+        }
         
         
         &__text-box {
@@ -68,8 +84,6 @@
     }
       
 }
-
-
 
 
 .header {
@@ -119,13 +133,13 @@
         padding: 40px;
         z-index: 100;
         margin: 0;
+
     }
     
     .header__hamburger {
         //margin-right: 10px;
         display: flex;
         height: 18px;
-        
         
     }
 
@@ -137,7 +151,9 @@
         
     }
 
-    
+    .nav {
+        display: grid;
+    }
 }
 
 
