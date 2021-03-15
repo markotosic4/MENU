@@ -41,7 +41,6 @@
     @extend %heading;
     font-size: 3vw;
     color: $color-black;
-    //text-transform: uppercase;
 
     &__color {
         color: $color-gray-dark;
@@ -51,9 +50,6 @@
 .heading-4 {
     @extend %heading;
     font-size: 1.7vw;
-
-    
-   // &--dark { color: $color-grey-dark-1; }
 }
 
 
@@ -64,7 +60,6 @@
     border: none;
     border-radius: 0;
     font-family: $font-primary;
-    //font-size: 1.5 vh;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.2vw 2vw;
@@ -78,9 +73,7 @@
     }
 
     @media (max-width: 720px) {
-            //padding: 1px 13px;
             color: $color-black;
-            //margin-top: 27px;
             font-size: 1vw;
 
             &__menu-item {

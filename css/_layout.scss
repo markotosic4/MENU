@@ -1,8 +1,6 @@
 .container {
     margin: 0;
     padding: 0;
-    
-    //height: auto;
 }
 
 .hero {
@@ -12,12 +10,7 @@
     background-image: url(../img/1-4.jpg);
     background-repeat: no-repeat;  
     background-size: cover;
-    //background-attachment: fixed;
-    //background-position-y: -120px;
-    //background-position: top; 
     display: grid;
-    //grid-template-rows: 6fr min-content minmax(3rem, min-content);
-    //grid-row-gap: 3rem;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     
@@ -28,10 +21,7 @@
         justify-items: start;
         grid-row: 8 / 11;
         grid-column: 2 / 3;
-        line-height: 5vw;
-        //grid-template-columns: 1fr 1fr 1fr;
-        //grid-template-columns: repeat(4, 1fr);
-        //grid-template-rows: 1fr;   
+        line-height: 5vw;  
     }  
     .navbar {
         display: none;
@@ -49,7 +39,6 @@
 @media (max-width: 500px) {
     .hero {
         background-image: url(../img/hero_image_maska.jpg);
-        //max-width: 100%;
         height:100vh;
         background-size: cover;
 
@@ -91,18 +80,12 @@
     height: 50px;
     padding: 40px;
     align-content: center;
-    
-    //background-color: #343532;
     opacity: 95%;
     width: 100vw;
     position: fixed;
     align-items: center;
     justify-content: center;
     
-    //margin-left: 10px;
-
-
-
     &__hamburger {
         display: none;
     }
@@ -114,7 +97,6 @@
 }
 
 .BgColour {
-    //color: white;
     transition: all 1s;
     background-color:#343532;
 
@@ -137,7 +119,6 @@
     }
     
     .header__hamburger {
-        //margin-right: 10px;
         display: flex;
         height: 18px;
         
@@ -289,8 +270,6 @@
             justify-content: center;
             font-size: 4.2vw;
             margin-top: 10px; 
-            //grid-template-rows: 1fr 1fr;
-            //flex-direction: row; 
     }
 }
 
@@ -300,12 +279,8 @@
 
 
 .about__section-1 {
-
-   //width: 100%;
    height: 50vw;
-   //position: relative;
    background-image: url(../img/about__photo-1.jpg);
-   //max-width: 100%;
    background-size: cover;
    display: grid;
    grid-template-columns: repeat(12, 1fr);
@@ -323,7 +298,6 @@
     display: none;
     @media (max-width: 500px) {
         display: grid;
-        //margin: 20px;
         margin-right: 28px;
         justify-content: center;
         line-height: 30px;
@@ -340,7 +314,6 @@
     align-content: center;
     justify-content: center;
     justify-items: start;
-    //line-height: 2vw;
     
     @media (max-width: 500px) {
         display: none;
@@ -352,7 +325,6 @@
     
     max-width: 100%;
     height: 28vw;
-    //position: relative;
     background-image: url(../img/about__photo-2.jpg);
     background-size: cover;
     display: grid;
@@ -387,7 +359,6 @@
     
     width: 100%;
     height: 35vw;
-    //position: relative;
     background-image: url(../img/about__photo-3.jpg);
     background-size: cover;
     
@@ -417,24 +388,15 @@
     display: none;
 
     @media (max-width: 500px) {
-        display: grid;
-        //font-size: 1.2vw;
-        
-    
-            //display: grid;
+            display: grid;
             justify-content: start;
             font-size: 4.2vw;
             margin-top: 10px; 
             margin-left: 10px;
-            //margin: 10px;
-            //grid-template-rows: 1fr 1fr;
-            //flex-direction: row; 
-    
     }
 }
 
 .menu {
-    //margin: 10rem;
     padding: 20px;
     display: grid;
     justify-content: center;
@@ -470,8 +432,6 @@
             width: 100%;
             grid-row: 1 / 2;
             grid-column: 1 / -1;
-            //z-index: 1;
-            
         }
 
         
@@ -492,13 +452,6 @@
     padding: 70px;
     
     
-   
-
-
-    
-    
-    
-
     .testimonial {
         display: grid;
         
@@ -518,15 +471,12 @@
         }
 
         @media (max-width: 720px) {
-             //display: none;
              grid-template-columns: 1fr;
              justify-content: center;
             } 
        
             @media (max-width: 500px) {
                 display:none;
-                //grid-template-columns: 1fr;
-                //justify-content: center;
                } 
     }
     
@@ -540,25 +490,20 @@
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px; 
-        //padding: 100px;
     } 
 
     .testimonial {
         display: grid;
         grid-template-columns: 1fr;
-        //grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px; 
 
         &__img {
-            //width: 12vw;
-            //border-radius: 50%;
             display: grid;
             grid-row: 1 / 2;
         }
 
         &__text {
-            //font-size: 1.5vw;
             grid-row: 2 /3;
         }
     }
@@ -574,11 +519,6 @@
         @media (max-width: 500px) {
             .testimonial {
                 display: none;
-                //grid-template-columns:1fr;
-                //grid-template-rows: 1fr;
-                //grid-column-gap: 0px;
-                //grid-row-gap: 0px; 
-                //padding: 100px;
             } 
         }
 
@@ -592,14 +532,8 @@
                 display: grid;
                 grid-template-rows: 30px 1fr 80px;
                 grid-gap: 20px;
-                //justify-content: center;
                 margin-left: 20px;
                 
-                .testimonials__details {
-                    //margin-left: 14px;
-                    
-                }
-
                 .testimonial__mob {
                     border-radius: 50%;
                 }
@@ -657,7 +591,6 @@
 }
 
 input{
-    //display: grid;
     padding: 10px;
     margin-bottom: 10px;
     width: 100%;
@@ -704,20 +637,14 @@ textarea::placeholder{
 
 .footer {
     display: grid;
-    //margin: 50px;
     padding: 50px;
     align-content: center;
-    //grid-template-columns: 1fr 1fr 1fr;
     background-color: #343532;
     justify-content: center;
     align-items: center;
 
     &__nav {
         display: grid;
-
-        //grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-        //grid-gap: 7rem;
-
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         //grid-column-gap: 10rem;
         list-style: none;
