@@ -17,6 +17,7 @@ $bp-largest: 106em;  // 1700px
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    overflow-x: hidden;
 }
 
 
@@ -38,6 +39,7 @@ body {
     //color: $color-grey-dark-2;
     font-weight: 300;
     line-height: 1.6;
+
 }
 
 
