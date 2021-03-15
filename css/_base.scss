@@ -18,13 +18,18 @@ $bp-largest: 106em;  // 1700px
     padding: 0;
     box-sizing: inherit;
 }
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 
 html {
     box-sizing: border-box;
     font-size: 100%;
-    width: 100%;
-    overflow-x: hidden;
 
     @media only screen and (max-width: $bp-largest) {
         font-size: 85%;
