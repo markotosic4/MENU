@@ -23,9 +23,6 @@
         grid-column: 2 / 3;
         line-height: 5vw;  
     }  
-    .navbar {
-        display: none;
-    }
 }
 
 
@@ -46,20 +43,7 @@
             display: none;
         }
 
-    
-        .nav__link:link,
-        .nav__link:visited {
-            font-size: 22px;
-            line-height: 40px;
-            color: white; 
-            padding: 0;
-        
-            transition: all .2s;
-            font-weight: normal;
-            
-        }
-        
-        
+     
         &__text-box {
                 grid-row: 7 / 10;
                 grid-column: 2 / 10;
