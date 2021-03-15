@@ -11,6 +11,8 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 106em) {
@@ -59,10 +61,6 @@ body {
   line-height: 5vw;
 }
 
-.hero .navbar {
-  display: none;
-}
-
 @media (max-width: 1600px) {
   .hero {
     background-image: url(../img/1-4_smaler_size.jpg);
@@ -77,16 +75,6 @@ body {
   }
   .hero .nav {
     display: none;
-  }
-  .hero .nav__link:link,
-  .hero .nav__link:visited {
-    font-size: 22px;
-    line-height: 40px;
-    color: white;
-    padding: 0;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-    font-weight: normal;
   }
   .hero__text-box {
     -ms-grid-row: 7;
