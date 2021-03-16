@@ -298,6 +298,10 @@
     align-content: center;
     justify-content: center;
     justify-items: start;
+    grid-row-gap: 27px;
+    &__lh {
+        line-height: 4.6vw;
+    }
     
     @media (max-width: 500px) {
         display: none;

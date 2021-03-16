@@ -373,6 +373,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   justify-items: start;
+  grid-row-gap: 27px;
+}
+
+.about__text-1__lh {
+  line-height: 4.6vw;
 }
 
 @media (max-width: 500px) {
