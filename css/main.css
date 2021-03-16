@@ -205,8 +205,8 @@ body {
     overflow: hidden;
     -ms-grid-columns: 100% 100% 100% 100% 100%;
         grid-template-columns: 100% 100% 100% 100% 100%;
-    -ms-grid-rows: 169px;
-        grid-template-rows: 169px;
+    -ms-grid-rows: 200px;
+        grid-template-rows: 200px;
     margin: 10px;
   }
   #slider figure {
