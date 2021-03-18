@@ -77,6 +77,36 @@
         display: none;
     }
 
+    #nav-toggle {
+        position: absolute;
+        top: -100px;
+    }
+
+    &__burger {
+        display: none;
+        position: absolute;
+        right: 7%;
+        top: 50%;
+        transform: translateY(-50%);
+        
+
+    }
+
+    &__burger .line {
+       width: 28px;
+       height: 2px;
+       background-color: #fff;
+       margin: 6px;
+       border-radius: 3px;
+       transition: all .3s ease-in-out;
+       cursor: pointer;
+       
+    }
+
+    &__links {
+        display: none;
+        position: absolute;
+    }
     
 }
 
@@ -102,13 +132,6 @@
 
     }
     
-    .header__hamburger {
-        display: flex;
-        height: 18px;
-        
-    }
-
-
     
     .header__logo {
         height: 55px;
@@ -119,6 +142,70 @@
     .nav {
         display: grid;
     }
+
+    .header__burger {
+        display: block;
+        z-index: 20;
+        
+        
+    }
+    .header :checked ~ .header__links {
+        bottom: 0;
+        top: 0;
+    }
+
+   
+    .header__links {
+        display: flex;
+        float: none;
+        position: fixed;
+        z-index: 10;
+        background-color: #BFD690;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        //height: auto;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+
+    }
+
+   
+
+    .header :checked ~ .header__burger .line:nth-child(1) {
+		transform: translateY(9px) rotate(225deg);
+	}
+	.header :checked ~ .header__burger .line:nth-child(3) {
+		transform: translateY(-7px) rotate(-225deg);
+	}
+	.header :checked ~ .header__burger .line:nth-child(2) {
+		opacity: 0;
+	}
+
+
+    .header__links li {
+        list-style: none;
+    }
+
+    .header__links a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-family: Nunito;
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        line-height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+
 }
 
 

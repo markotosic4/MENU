@@ -23,29 +23,55 @@
 <body>
  <div class="container">  
 <div class="hero" id="home">
-   <div id="navbar" class="header">
-       <img  src="img/LOGO.svg" alt="My menu logo" class="header__logo"> 
-       <img  src="img/Hamburger.svg" alt="My menu hamburger" class="header__hamburger">
-       
-
-
-
-    <ul  class="nav">
-        <li class="nav__item">
-            <a href="#home" class="nav__link">home</a>
-        </li>
-        <li class="nav__item">
-            <a href="#about" class="nav__link"> about</a>
-        </li>
-        <li class="nav__item">
-         <a href="#menu" class="nav__link"> menu</a>
+    <div id="navbar" class="header">
+        <input id="nav-toggle"type="checkbox">  
+        <img  src="img/LOGO.svg" alt="My menu logo" class="header__logo"> 
+        
+        <ul  class="header__links">
+         <li class="nav__item">
+             <a href="#home" class="nav__links">home</a>
+         </li>
+         <li class="nav__item">
+             <a href="#about" class="nav__links"> about</a>
+         </li>
+         <li class="nav__item">
+          <a href="#menu" class="nav__links"> menu</a>
+      </li>
+      <li class="nav__item">
+          <a href="#contact-section" class="nav__links"> contact us</a>
+      </li>
+      <li class="nav__item">
+         <a href="#reservation" class="nav__links"> make a reservation</a>
      </li>
-     <li class="nav__item">
-         <a href="#contact-section" class="nav__link"> contact</a>
-     </li>
-    </ul>   
+     </ul>
+ 
      
-   </div>
+ 
+        <label for="nav-toggle" class="header__burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        
+ 
+ 
+ 
+     <ul  class="nav">
+         <li class="nav__item">
+             <a href="#home" class="nav__link">home</a>
+         </li>
+         <li class="nav__item">
+             <a href="#about" class="nav__link"> about</a>
+         </li>
+         <li class="nav__item">
+          <a href="#menu" class="nav__link"> menu</a>
+      </li>
+      <li class="nav__item">
+          <a href="#contact-section" class="nav__link"> contact</a>
+      </li>
+     </ul>   
+      
+    </div>
 
    <div class="hero__text-box">
     <h2 class="heading-2 heading-2-1 heading-2__animated">It's all about<br>EXPERIENCE</h2>
